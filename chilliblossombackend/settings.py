@@ -153,3 +153,4 @@ CSRF_COOKIE_SECURE = True
 
 
 REACT_BASE_URL=os.getenv("REACT_BASE_URL","https://seedsecommerce.onrender.com")
+REACT_BASE_URL=os.getenv("REACT_BASE_URL","https://seeds-ecommerce.vercel.app")
