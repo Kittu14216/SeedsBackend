@@ -60,12 +60,10 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-
-"http://localhost:5173",
-"http://localhost:5174",
-"http://localhost:5175",
-
+    "https://seeds-ecommerce.vercel.app",
+    "http://localhost:5173",
 ]
+
 
 ROOT_URLCONF = 'chilliblossombackend.urls'
 
@@ -147,3 +145,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL='core.CustomUser'
 CORS_ALLOW_CREDENTIALS = True
 
+SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SECURE = True
+
+CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SECURE = True
+
+
+REACT_BASE_URL=os.getenv("REACT_BASE_URL","https://seedsecommerce.onrender.com")
